@@ -484,7 +484,7 @@ grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
 }
 .signup h2{
     font-family: "EB Garamond", serif;
-    font-size:clamp(20px, 3vw, 28px);
+    font-size:clamp(17px, 3vw, 28px);
     color: var(--Primarycolor);
     line-height:32px;
     letter-spacing: 1px;
@@ -502,11 +502,10 @@ input{
     font-size: clamp(10px, 2vw, 16px);
     font-weight: 400;
     line-height: 24px;
-    border-bottom:;
 }
 .signup a{
     margin-top: 8px;
-    padding: 15px 24px;
+    padding: 12px 24px;
     border: #3A3845 1px solid;
     text-decoration: none;
     color: #3A3845;
@@ -523,4 +522,13 @@ input{
 .signup a:hover{
     color: rgb(189, 189, 218);
     background-color: black;
+}
+@media screen and ( min-width:0 ) and ( max-width:600px ){
+    input{
+        width: 250px;
+    }
+.signup{
+    max-width: 350px;
+    margin: 0 auto;
+};
 }
